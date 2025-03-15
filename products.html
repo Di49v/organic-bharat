@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Farms Network</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/products.css">
+
+    <!-- Heaader styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css"> 
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" href="assets/logo-small.svg" type="image/svg+xml">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#712cf9">
+
+</head>
+
+<body>
+    <section id ="special-section">
+        <header class="py-3 custom-bg border-bottom">
+            <div class="container d-flex flex-wrap justify-content-center">
+                <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
+                    <img src="images/logo.png" alt="Logo" height="150px">
+                </a>
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 search_new" role="search">
+                    <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                </form>
+            </div>
+        </header>
+        <!-- The main header ends -->
+        <nav class="py-2 mb-3 bg-body-tertiary border-bottom">
+            <div class="container d-flex flex-wrap">
+                <ul class="nav me-auto">
+                    <li class="nav-item"><a href="home.html" class="nav-link link-body-emphasis px-2 active" aria-current="page">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Features</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Pricing</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">FAQs</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">About</a></li>
+                </ul>
+                <ul class="nav">
+                    <li class="nav-item"><a href="login.html" class="nav-link link-body-emphasis px-2">Login</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link link-body-emphasis px-2 dropdown-toggle" id="signupDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sign up</a>
+                        <ul class="dropdown-menu" aria-labelledby="signupDropdown">
+                            <li><a class="dropdown-item" href="#">Register as Farmer</a></li>
+                            <li><a class="dropdown-item" href="#">Register as Customer</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <main>
+        <!-- City Filter Column -->
+        <div class="city-filter" style="text-align: left; background-color: #f7f3ef;" >
+            <h2 style="padding-left: 2.5rem;">Select City</h2>
+            <ul class="city-list">
+                <li onclick="filterFarms()">Clear Filter</li>
+                <li onclick="filterFarms('Amritsar, Punjab')">Amritsar, Punjab</li>
+                <li onclick="filterFarms('Jalandhar, Punjab')">Jalandhar, Punjab</li>
+                <li onclick="filterFarms('Ludhiana, Punjab')">Ludhiana, Punjab</li>
+                <li onclick="filterFarms('Rajkot, Gujarat')">Rajkot, Gujarat</li>
+                <li onclick="filterFarms('Guntur, Andhra Pradesh')">Guntur, Andhra Pradesh</li>
+                <li onclick="filterFarms('Nashik, Maharashtra')">Nashik, Maharashtra</li>
+            </ul>
+        </div>
+
+
+        <!-- Farms Container -->
+        <div class="farms-container">
+            <!-- Sample Farm Cards -->
+            <!-- Farm 1 Card -->
+            <div class="farm-card" data-city="Amritsar, Punjab" data-rating="5">
+                <img src="products_images/farm1.svg" alt="GreenLeaf Organic" class="farm-image">
+                <div class="farm-info">
+                    <h3 class="farm-name">GreenLeaf Organic Farm</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        123, Green Valley Road, Amritsar, Punjab
+                    </p>
+                </div>
+            </div>
+            <!-- Farm 2 Card -->
+            <div class="farm-card" data-city="Amritsar, Punjab" data-rating="3">
+                <img src="products_images/farm2.svg" alt="FreshFields Organic" class="farm-image">
+                <div class="farm-info">
+                    <h3 class="farm-name">FreshFields Organic Estate</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        456, Orchade Lane, Amritsar, Punjab
+                    </p>
+                </div>
+            </div>
+            <!--Farm 3-->
+            <div class="farm-card" data-city="Ludhiana, Punjab" data-rating="4">
+                <img src="products_images/farm3.svg" alt="Sunrise Naturals" class="farm-image">
+                <div class="farm-info">
+                    <h3 class="farm-name">Sunrise Naturals Farm</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        789, Harvest Street, Ludhiana, Punjab
+                    </p>
+                </div>
+            </div>
+            <!--Farm 4-->
+            <div class="farm-card" data-city="Guntur, Andhra Pradesh" data-rating="4">
+                <img src="products_images/farm4.svg" alt="EcoGrow Farms" class="farm-image">
+                <div class="farm-info">
+                    <h3 class="farm-name">EcoGrow Farms</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p class="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        321, Plantation Avenue, Guntur, Andhra Pradesh
+                    </p>
+                </div>
+            </div>
+            <!-- Add more farm cards following the same structure -->
+        </div>
+    </main>
+
+    <!-- Farm Modal -->
+    <!-- Farm 1 -->
+    <div id="farmModal1" class="farm-modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <img id="modalImage" src="products_images/farm1.svg" alt="Farm Image" class="modal-image">
+            <h2 id="farmName">GreenLeaf Organic Farm</h2>
+            <div class="rating" id="modalRating"></div>
+            
+            <h3>Certifications</h3>
+            <div class="certifications" id="certifications">
+                <span class="certification-badge">NPOP</span>
+                <span class="certification-badge">USDA Organic</span>
+                <span class="certification-badge">Certified Naturally Grown</span>
+            </div>
+
+            <h3>Available Produce</h3>
+            <div class="produce-list" id="produceList">
+                <div class="produce-item" onclick="selectProduce(this)">
+                    <h4>Tomatoes</h4>
+                    <p>&#8377;50/Kg</p>
+                </div>
+                <div class="produce-item" onclick="selectProduce(this)">
+                    <h4>Spinach</h4>
+                    <p>&#8377;30/bunch</p>
+                </div>
+                <div class="produce-item" onclick="selectProduce(this)">
+                    <h4>Carrots</h4>
+                    <p>&#8377;40/Kg</p>
+                </div>
+                <div class="produce-item" onclick="selectProduce(this)">
+                    <h4>Mangoes</h4>
+                    <p>&#8377;100/Kg</p>
+                </div>
+                <!-- Add more produce items -->
+            </div>
+
+            <div class="booking-form">
+                <h3>Schedule Pickup</h3>
+                <div class="form-group">
+                    <input type="date" id="pickupDate" required>
+                    <input type="number" id="pickupQuantity" 
+                           min="1" value="1" 
+                           placeholder="Qty" required>
+                    <select id="measurementUnit">
+                        <option value="lb">lb</option>
+                        <option value="kg">kg</option>
+                        <option value="bunch">bunch</option>
+                        <option value="item">item</option>
+                    </select>
+                </div>
+                <button onclick="submitBooking()">Book Now</button>
+            </div>
+
+            <h3>Customer Reviews</h3>
+            <!-- Review 1 -->
+            <div class="reviews" id="reviews">
+                <div class="review">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Fresh produce and friendly staff!" - Gurnadar K.</p>
+                </div>
+            <!-- Review 2 -->
+            <div class="reviews" id="reviews">
+                <div class="review">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Their organic mangoes are a treat! Juicy and sweet." - Eshaan B.</p>
+                </div>
+                <!-- Add more reviews -->
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <!-- Farm 2 -->
+    <div id="farmModal2" class="farm-modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <img id="modalImage" src="products_images/farm2.svg" alt="Farm Image" class="modal-image">
+            <h2 id="farmName">FreshFields Organic Estate</h2>
+            <div class="rating" id="modalRating"></div>
+            
+            <h3>Certifications</h3>
+            <div class="certifications" id="certifications">
+                <span class="certification-badge">NPOP</span>
+                <span class="certification-badge">USDA Organic</span>
+            </div>
+        
+            <h3>Available Produce</h3>
+            <div class="produce-list" id="produceList">
+                <div class="produce-item" onclick="selectProduce(this)">
+                    <h4>Cucumbers</h4>
+                    <p>&#8377;35/Kg</p>
+                </div>
+                <div class="produce-item" onclick="selectProduce(this)">
+                    <h4>Banana</h4>
+                    <p>&#8377;60/dozen</p>
+                </div>
+                <div class="produce-item" onclick="selectProduce(this)">
+                    <h4>Papayas</h4>
+                    <p>&#8377;45/Kg</p>
+                </div>
+                <!-- Add more produce items -->
+            </div>
+        
+            <div class="booking-form">
+                <h3>Schedule Pickup</h3>
+                <div class="form-group">
+                    <input type="date" id="pickupDate" required>
+                    <input type="number" id="pickupQuantity" 
+                        min="1" value="1" 
+                        placeholder="Qty" required>
+                    <select id="measurementUnit">
+                        <option value="lb">lb</option>
+                        <option value="kg">kg</option>
+                        <option value="bunch">bunch</option>
+                        <option value="item">item</option>
+                    </select>
+                </div>
+                <button onclick="submitBooking()">Book Now</button>
+            </div>
+        
+            <h3>Customer Reviews</h3>
+            <!-- Review 1 -->
+            <div class="reviews" id="reviews">
+                <div class="review">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p>"Impressed with their sustainable farming practices. The taste speaks for itself." - Divleen.K</p>
+                </div>
+            <!-- Review 2 -->
+            <div class="reviews" id="reviews">
+                <div class="review">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p> "A trustworthy source for organic vegetables. Never disappointed." - Jiya</p>
+                </div>
+                <!-- Add more reviews -->
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        // Filter farms by city
+        function filterFarms(city) {
+            const farms = document.querySelectorAll('.farm-card');
+            if (city) {
+                farms.forEach(farm => {
+                    farm.style.display = farm.dataset.city === city ? 'block' : 'none';
+                });
+            } else {
+                farms.forEach(farm => {
+                    farm.style.display = 'block';
+                });
+            }
+        }
+
+
+        // Modal handling
+        document.querySelectorAll('.farm-card').forEach((card, index) => {
+            card.addEventListener('click', function() {
+                const modal = document.getElementById(`farmModal${index + 1}`);
+                modal.style.display = 'block';
+                
+                // Populate modal data (in real app, fetch from database)
+                document.getElementById('modalImage').src = this.querySelector('img').src;
+                document.getElementById('farmName').textContent = this.querySelector('.farm-name').textContent;
+                document.getElementById('modalRating').innerHTML = this.querySelector('.rating').innerHTML;
+            });
+        });
+
+        function closeModal() {
+            const modals = document.getElementsByClassName("farm-modal");
+            for (let i = 0; i < modals.length; i++) {
+                modals[i].style.display = 'none';
+            }
+        }
+
+
+
+        function selectProduce(selectedItem) {
+            // Deselect all produce items
+            const produceItems = document.querySelectorAll('.produce-item');
+            produceItems.forEach(item => {
+                item.classList.remove('selected');
+            });
+
+            // Select the clicked item
+            selectedItem.classList.add('selected');     
+        }
+
+        // Booking submission
+        function submitBooking() {
+            const date = document.getElementById('pickupDate').value;
+            const quantity = document.getElementById('pickupQuantity').value;
+            const unit = document.getElementById('measurementUnit').value;
+            
+            if(date && quantity > 0) {
+                alert(`Booked ${quantity}${unit} for pickup on ${date}`);
+                closeModal();
+            } else {
+                alert('Please fill all required fields correctly');
+            }
+        }
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            if(event.target.classList.contains('farm-modal')) {
+                closeModal();
+            }
+        }
+    </script>
+</body>
+</html>

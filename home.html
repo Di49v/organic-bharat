@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" href="assets/logo-small.svg" type="image/svg+xml">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#712cf9">
+
+    <title>Organic Bharat</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Carousel links-->
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+    <!-- Custom styles for carousel -->
+    <link href="css/carousel.css" rel="stylesheet">
+</head>
+<body>
+    <!-- The main header -->
+    
+    <header class="py-3 custom-bg border-bottom">
+        <div class="container d-flex flex-wrap justify-content-center">
+            <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
+                <img src="images/logo.png" alt="Logo" height="150px">
+            </a>
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 search_new" role="search">
+                <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+            </form>
+        </div>
+    </header>
+    <!-- The main header ends -->
+    <nav class="py-2 mb-3 bg-body-tertiary border-bottom">
+        <div class="container d-flex flex-wrap">
+            <ul class="nav me-auto">
+                <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2 active" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">Pricing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-2">About</a></li>
+            </ul>
+            <ul class="nav">
+                <li class="nav-item"><a href="login.html" class="nav-link link-body-emphasis px-2">Login</a></li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link link-body-emphasis px-2 dropdown-toggle" id="signupDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sign up</a>
+                    <ul class="dropdown-menu" aria-labelledby="signupDropdown">
+                        <li><a class="dropdown-item" href="#">Register as Farmer</a></li>
+                        <li><a class="dropdown-item" href="#">Register as Customer</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <!-- Carousel starts-->
+        <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="home_images/slide1.svg" class="bd-placeholder-img" width="100%" height="100%" alt="SAS Image" style="object-fit: cover;" />
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1>Cultivating Connections: Where natural farmers meet mindful consumers....</h1>
+                            <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                        </div>
+                    </div>
+                </div>                
+                <div class="carousel-item">
+                    <img src="home_images/slide2.svg" class="bd-placeholder-img" width="100%" height="100%" alt="SAS Image" style="object-fit: cover;" />
+                <div class="container">
+                    <div class="carousel-caption">
+                    <h1>Be Organic, Be Healthy, Be You.</h1>
+                    <p>Don't view organic food as an expense, view it as an investment in your health..</p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                    </div>
+                </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="home_images/slide3.svg" class="bd-placeholder-img" width="100%" height="100%" alt="SAS Image" style="object-fit: cover;" />
+                <div class="container">
+                    <div class="carousel-caption text-end">
+                    <h1>From Farm to Table, Naturally.</h1>
+                    <p>Organic farming relies on natural practices like composting, crop rotation, biological pest control, 
+                        and green manure. It avoids synthetic fertilizers, pesticides, and GMOs, promoting soil health and 
+                        environmental sustainability.</p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+      
+      
+        <!-- Marketing messaging and featurettes
+        ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+      
+        <div class="container marketing">
+      
+            <!-- Three columns of text below the carousel -->
+            <div class="row">
+                
+                <div class="col-lg-4">
+                    <img src="home_images/circle1.svg" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="Image description">
+                    <h2 class="fw-normal">DOMINANCE</h2>
+                    <p class="text-collapsed text-content">
+                        India has the highest number of organic farmers globally, with 835,000 certified organic producers. Despite this, organic farming in India covers only 2.59% of the total 
+                        agricultural land, with most farmers cultivating less than two hectares.
+                    </p>
+                    <p><a class="btn btn-secondary toggle-button" href="#">View details &raquo;</a></p>
+                </div>
+            
+                <div class="col-lg-4">
+                    <img src="home_images/circle2.svg" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="Image description">
+                    <h2 class="fw-normal">CERTIFICATION</h2>
+                    <p class="text-collapsed text-content">
+                        Over 1.9 million farmers were registered under organic certification, with a significant portion verified under the NPOP certification system and PGS India, ensuring adherence to national organic standards.
+                    </p>
+                    <p><a class="btn btn-secondary toggle-button" href="#">View details &raquo;</a></p>
+                </div>
+            
+                <div class="col-lg-4">
+                    <img src="home_images/circle3.svg" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="Image description">
+                    <h2 class="fw-normal">EXPANSION</h2>
+                    <p class="text-collapsed text-content">
+                        As of March 2020, India had 2.78 million hectares of land under certified organic farming, accounting for just 2% of the total net sown area (140.1 million hectares).
+                    </p>
+                    <p><a class="btn btn-secondary toggle-button" href="#">View details &raquo;</a></p>
+                </div><!-- /.row -->
+            </div>
+      
+            <!-- START THE FEATURETTES -->
+        
+            <hr class="featurette-divider">
+        
+            <div class="row featurette" style=background-color:#fcf0e3>
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">Boost Your Health and the Planet: <span class="text-body-secondary">Go Organic Today!</span></h2>
+                    <p class="lead">Organic food isn't just good for the planet—it's a health game-changer! Packed with more nutrients and free from 
+                        synthetic chemicals, it's a delicious way to boost your immune system and reduce the risk of diseases. 
+                        Go organic for a healthier, tastier, and more vibrant life! &#x1F331;&#x1F34F;</p>
+                </div>
+                <!-- <div class="col-md-5">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+
+                </div> -->
+                <!-- <div class="col-md-5">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>30percent.svg</title>
+                        <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/>
+                        <text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">30percent.svg</text>
+                    </svg>
+                </div> -->
+                <div class="col-md-5">
+                    <img src="home_images/featurette1.svg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="featurette2.svg image">
+                </div>
+                
+            </div>
+      
+            <hr class="featurette-divider">
+        
+            <div class="row featurette" style=background-color:#f3dabe>
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading fw-normal lh-1">Direct Access for <span class="text-body-secondary">Organic Growers.</span></h2>
+                    <p class="lead">A group of small organic farmers in Punjab struggled to sell their produce at fair prices due to middlemen and lack of direct access to consumers. By joining the website, farmers created individual profiles, listed their seasonal produce, and connected with conscious consumers interested in chemical-free food.</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img src="home_images/featurette2.svg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" alt="featurette3.svg image">
+
+                </div>
+            </div>
+        
+            <hr class="featurette-divider">
+        
+            <div class="row featurette" style=background-color:#fcf0e3>
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">Fresh from the Farm, Certified Organic <span class="text-body-secondary">for you.</span></h2>
+                    <p class="lead">A growing number of urban consumers wanted organic, locally sourced food but found supermarket options unreliable and overpriced. Through the website, consumers have direct access to farm-fresh fruits and vegetables, sourced directly from nearby organic farmers.</p>
+                </div>
+                <div class="col-md-5">
+                    <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg> -->
+                    <img src="home_images/featurette3.svg" alt="Image description" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"  width="500" height="500" alt="SAS Image"/>
+                </div>
+            </div>
+        
+            <hr class="featurette-divider">
+        
+            <!-- /END THE FEATURETTES -->
+      
+        </div><!-- /.container -->
+      
+      
+        <!-- FOOTER -->
+        <footer class="container">
+            <p class="float-end"><a href="#">Back to top</a></p>
+            <p>&copy; 2025 Organic Bharat, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        </footer>
+    </main>
+
+    <!-- Link to the npm-managed jQuery -->  
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>  
+    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="index.js"></script>
+</body>
+</html>

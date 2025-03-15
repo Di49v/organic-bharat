@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+main {
+    display: flex;
+    gap: 30px;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* City Filter Section */
+.city-filter {
+    width: 300px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 20px;
+    height: calc(100vh - 40px);
+}
+
+.city-filter h2 {
+    color: #2d6a4f;
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+}
+
+.city-list {
+    list-style: none;
+    overflow-y: auto;
+    max-height: calc(100vh - 120px);
+}
+
+.city-list li {
+    padding: 12px 15px;
+    margin: 8px 0;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    color: #4a4a4a;
+}
+
+.city-list li:hover {
+    background: #e8f5e9;
+    transform: translateX(5px);
+}
+
+/* Farms Container */
+.farms-container {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 25px;
+    align-content: start;
+}
+
+.farm-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.farm-card:hover {
+    transform: translateY(-5px);
+}
+
+.farm-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.farm-info {
+    padding: 18px;
+}
+
+.farm-name {
+    color: #1b5e20;
+    margin-bottom: 12px;
+}
+
+.rating {
+    color: #ffd700;
+    margin-bottom: 10px;
+}
+
+.location {
+    color: #666;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Farm Modal */
+.farm-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white !important;
+    width: 85%;
+    max-width: 800px;
+    margin: 2% auto;
+    padding: 30px;
+    border-radius: 12px;
+    position: relative;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #666;
+}
+
+.modal-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.certifications {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 15px 0;
+}
+
+.certification-badge {
+    background: #e8f5e9;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+}
+
+.produce-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.produce-item {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.produce-item.selected {
+    border: 1.5px solid blue; /* Selected border color */
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.review {
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.booking-form {
+    margin-top: 25px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+input[type="date"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button {
+    background: #2d6a4f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #1b5e20;
+}
+.form-group {
+display: flex;
+gap: 10px;
+margin: 15px 0;
+}
+
+.form-group input, 
+.form-group select {
+flex: 1;
+padding: 8px;
+border: 1px solid #ddd;
+border-radius: 5px;
+}
+
+.form-group select {
+max-width: 100px;
+}
