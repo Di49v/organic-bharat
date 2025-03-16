@@ -40,38 +40,50 @@
         </div>
     </header>
 
-    <main class="form-signin w-100 m-auto row align-items-center py-4">
-        <!-- Side image -->
-        <div class="col-md-6">
-            <img src="farmer_login_images/Login_side.svg" class="img-fluid">
-        </div>
-        <!-- Login form -->
-        <div class="col-md-6">
-            <div class="container w-75" style="background-color: lightgray;">
-                <form class="row g-3">
-                    <div class="d-flex justify-content-center align-items-center">
-                        <img src="images/Logo.svg" class="img-fluid w-25">
-                    </div>
-                    <h3 class="h3 mb-3 fw-normal text-center">Login/Sign up</h3>
-                    <div class="col-12">
-                        <div class="form-floating">
-                            <input type="text" class="form-control" id="phoneNumber" placeholder="Phone number">
-                            <label for="phoneNumber">Phone number</label>
+    <main class="container-fluid vh-100 d-flex align-items-center justify-content-center">
+        <div class="row w-100 shadow-lg rounded">
+            <!-- Side image -->
+            <div class="col-md-6 d-none d-md-flex justify-content-center align-items-center bg-light">
+                <img src="farmer_login_images/Login_side.svg" class="img-fluid">
+            </div>
+            <!-- Login form -->
+            <div class="col-md-6 d-flex flex-column justify-content-center align-items-center p-4" style="background-color: rgb(237, 235, 235);">
+                <div class="w-100">
+                    <form class="row g-4">
+                        <!-- Logo -->
+                        <div class="text-center mb-3">
+                            <img src="images/logo.svg" class="img-fluid" style="max-width: 200px;">
                         </div>
-                    </div>
-                    <div class="col-12">
-                        <button class="btn btn-primary w-100" type="button">Get OTP</button>
-                    </div>
-                    <div class="col-12">
-                        <button class="btn btn-outline-primary w-100" type="button">Sign in with Google</button>
-                    </div>
-                    <div class="col-12">
-                        <button class="btn btn-outline-primary w-100" type="button">Sign in with Facebook</button>
-                    </div>
-                </form>
+                        <h3 class="text-center fw-bold">Login/Sign up</h3>
+                        <!-- Phone number input -->
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="phoneNumber" placeholder="Phone number">
+                                <label for="phoneNumber">Phone number</label>
+                            </div>
+                        </div>
+                        <!-- Get OTP button -->
+                        <div class="col-12">
+                            <button class="btn btn-primary w-100" type="button">Get OTP</button>
+                        </div>
+                        <!-- Google sign-in -->
+                        <div class="col-12">
+                            <button class="btn btn-outline-primary w-100" type="button">Sign in with Google</button>
+                        </div>
+                        <!-- Facebook sign-in -->
+                        <div class="col-12">
+                            <button class="btn btn-outline-primary w-100" type="button">Sign in with Facebook</button>
+                        </div>
+                        <!-- Signup prompt -->
+                        <div class="col-12 text-center mt-3">
+                            <p class="mb-0">Don't have an account? <a href="#" class="text-primary text-decoration-none">Sign up</a></p>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </main>
+    
     
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
